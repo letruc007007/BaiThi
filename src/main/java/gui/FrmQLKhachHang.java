@@ -111,4 +111,10 @@ public class FrmQLKhachHang extends JFrame {
         txtMax.setText(String.valueOf(qlkh.getTieuThuCaoNhat()));
         txtTB.setText(String.valueOf(qlkh.getTieuThuTrungBinh()));
     }
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            FrmQLKhachHang frame = new FrmQLKhachHang("Quản lý Khách Hàng");
+            frame.setVisible(true);
+        });
+    }
 }
